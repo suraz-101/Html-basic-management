@@ -93,3 +93,16 @@ const result = fact(number);
 console.log(result);
 
 // fact(number);
+
+const lan = "nep";
+
+switch (true) {
+  case lan == "en":
+    console.log("english");
+    break;
+  case lan == "nep":
+    console.log("nepali");
+    break;
+  default:
+    console.log("invalid");
+}
