@@ -57,7 +57,7 @@ console.log(thirdList);
 // 50-59 => D
 //0 -49 => F
 
-const grade = 100;
+const grade = 50;
 switch (true) {
   case grade >= 80 && grade <= 100:
     console.log("GRADE => A");
