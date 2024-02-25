@@ -7,12 +7,63 @@
     <title>JS RECAP</title>
   </head>
   <body>
-    <!-- div and span (differences between)
-    audio video 
-
-    //collect users data
-    => Form -> input , select(drop down), label, textarea, button, checkbox, radio button, slider, file upload
-   -->
-    <script src="./js-recap.js"></script>
+    <form>
+      <label>Name</label>
+      <input type="text" />
+      <br />
+      <label>email</label>
+      <input type="email" />
+      <br />
+      <label>password</label>
+      <input type="password" />
+      <br />
+      <label>Date</label>
+      <input type="date" / >
+      <br />
+      <label>Age</label>
+      <input
+        id="age"
+        type="range"
+        min="0"
+        max="100"
+        value="0"
+        onchange="showMyAge()"
+      />
+      <label id="rangeValue">0</label>
+      <br />
+      <label name="gender">Gender</label>
+      <input
+        class="gender"
+        type="radio"
+        name="gender"
+        value="m"
+        onclick="showGenderValue(this.value)"
+      />
+      <label>Male</label>
+      <input
+        class="gender"
+        type="radio"
+        name="gender"
+        value="f"
+        onclick="showGenderValue(this.value)"
+      />
+      <label>Female</label>
+      <input
+        class="gender"
+        type="radio"
+        name="gender"
+        value="o"
+        onclick="showGenderValue(this.value)"
+      />
+      <label>others</label>
+      <label id="genderValue"></label>
+      <br />
+      <label name="drinks">Drinks</label>
+      <input type="checkbox" name="drinks" value="tea" />
+      <label>Tea</label>
+      <input type="checkbox" name="drinks" value="cofee" />
+      <label>Cofee</label>
+    </form>
+    <script src="./index.js"></script>
   </body>
 </html>
