@@ -7,7 +7,7 @@
     <title>JS RECAP</title>
   </head>
   <body>
-    <form>
+    <!-- <form>
       <label>Name</label>
       <input type="text" />
       <br />
@@ -63,6 +63,27 @@
       <label>Tea</label>
       <input type="checkbox" name="drinks" value="cofee" />
       <label>Cofee</label>
+    </form> -->
+
+    <form id="formdata">
+      <label>Name</label>
+      <input type="text" name="name" placeholder="Please provide name" />
+      <br />
+      <label>Email</label>
+      <input type="email" name="email" placeholder="example@gmail.com" />
+      <br />
+      <label>file</label>
+      <input type="file" name="profilePic" placeholder="image" />
+      <br />
+      <label>Message</label>
+      <textarea
+        name="message"
+        id="message"
+        cols="30"
+        rows="10"
+        placeholder="Message"
+      ></textarea>
+      <button type="submit" id="button">Submit</button>
     </form>
     <script src="./index.js"></script>
   </body>
