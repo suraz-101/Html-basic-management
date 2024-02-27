@@ -75,3 +75,11 @@ In above case, conditions are score>=80 && score <=100 which returns the boolean
 => audio
 => video
 => form
+
+# Day - 47 - HTML, CSS
+
+# Day - 48 - HTML Form
+
+# Day - 49 - HTML , Javascritp
+
+# Day - 50 - HTML , CSS with Bootstrap

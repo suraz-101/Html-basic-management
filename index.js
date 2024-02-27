@@ -24,6 +24,27 @@ btn.addEventListener("click", (e) => {
   console.log(object);
 });
 
+const registerBtn = document.getElementById("registerButton");
+
+const registerData = document.getElementById("registerData");
+console.log(formd);
+registerBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  // const gender = document.getElementsByName("gender");
+  // console.log("Gender:", gender);
+  const data = document.getElementById("formdata");
+  const formData = new FormData(data);
+
+  for (item of formData) {
+    console.log(item);
+  }
+  const object = {};
+  formData.forEach((value, key) => {
+    object[key] = value;
+  });
+  console.log(object);
+});
+
 // const formsData = () => {
 //   const data = document.getElementById("formdata");
 //   const formdata = new FormData(data);
