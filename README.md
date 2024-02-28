@@ -83,3 +83,32 @@ In above case, conditions are score>=80 && score <=100 which returns the boolean
 # Day - 49 - HTML , Javascritp
 
 # Day - 50 - HTML , CSS with Bootstrap
+
+# Day - 51 : HTML Bootstrp Form(Login and Registration)
+
+=> Pages need to be built
+
+==> For guest
+
+    - login
+    - RegisterS
+    - Forget Password
+    - Verify Password
+    - Home
+    - Bookmark
+    - Blog list
+    - Blog Details
+    - Search
+    - Aboout us
+    - contact us
+
+==> For user/ admin
+
+    - Add Blog
+    - Blog list
+    - Blog Edit
+    - Add User
+    - User list (Admin only)
+    - User Edit (Admin only)
+    - Profile
+    - Setting
