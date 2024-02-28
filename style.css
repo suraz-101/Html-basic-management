@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+.boxShadow {
+  animation: changingColor 5s linear infinite;
+}
+
+@keyframes changingColor {
+  0% {
+    box-shadow: 0px 0px 200px 20px rgb(0, 34, 85);
+  }
+  25% {
+    box-shadow: 0px 0px 200px 20px rgb(1, 42, 104);
+  }
+  50% {
+    box-shadow: 0px 0px 200px 20px rgb(1, 56, 138);
+  }
+  75% {
+    box-shadow: 0px 0px 200px 20px rgb(0, 34, 85);
+  }
+  100% {
+    box-shadow: 0px 0px 200px 20px rgb(0, 34, 85);
+  }
+}
+
+label {
+  color: white;
+}
+
+.btn {
+  background-color: rgb(0, 34, 85);
+  color: white;
+  z-index: 1;
+}
+.btn:hover {
+  border: 1px solid white;
+  transition: 0.3s ease-in-out;
+  background-color: rgb(0, 34, 85);
+  color: white;
+}
+
+#password {
+  position: relative;
+  /* border: 1px solid white; */
+}
+
+#passwordValidation {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: auto;
+  width: 100%;
+  display: none;
+}
