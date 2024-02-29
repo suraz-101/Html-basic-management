@@ -48,11 +48,15 @@ label {
   /* border: 1px solid white; */
 }
 
-#passwordValidation {
+.passwordValidation {
   position: absolute;
   top: 100%;
   left: 0;
   height: auto;
   width: 100%;
   display: none;
+}
+
+.passwordValidation p {
+  font-size: 10px;
 }

@@ -112,3 +112,5 @@ In above case, conditions are score>=80 && score <=100 which returns the boolean
     - User Edit (Admin only)
     - Profile
     - Setting
+
+# Day - 53 : Home page design
