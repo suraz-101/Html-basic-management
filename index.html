@@ -47,51 +47,27 @@
         >
           <form class="d-flex col-4">
             <input
-              class="col-md-8 form-control"
+              class="col-8 form-control"
               type="text"
               placeholder="Search"
             />
-            <button
-              class="searchButton btn my-2 my-sm-0 col-md-2"
-              type="submit"
-            >
+            <button class="searchButton btn my-2 my-sm-0 col-2" type="submit">
               <i class="fa fa-search"></i>
             </button>
           </form>
           <ul class="navbar-nav mr-auto justify-content-end col-8">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home </a>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About Us</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Category
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">science</a>
-                <a class="dropdown-item" href="#">It</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#">Blogs</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link px-4 loginButton"
-                href="./login.html"
-                tabindex="-1"
+              <a class="nav-link px-4 button" href="./login.html" tabindex="-1"
                 >Login</a
               >
             </li>
@@ -100,11 +76,49 @@
       </nav>
     </div>
     <div class="container-fluid main-content bg-light">
-      <div class="cta container border row m-auto">
-        <div class="col-lg-6 p-4">TRhis is the formn section</div>
-        <div class="col-lg-6 p-4">This is the image section</div>
+      <div class="cta container row m-auto">
+        <div class="col-lg-6 p-5 d-sm-block cta-content text-center">
+          <h2>This is the title of the blog</h2>
+          <p class="text-muted">By Author Name</p>
+          <p>This is content of the blog but the summary only ...</p>
+
+          <div class="row">
+            <button class="btn button col-6 col-sm-4 m-auto">Learn More</button>
+          </div>
+        </div>
+        <div class="col-lg-6 d-sm-none d-none d-lg-block imageBackground"></div>
       </div>
-      <div class="contianer-fluid title p-4">Popular Blogs</div>
+      <div class="contianer-fluid title p-4">
+        <div class="container">
+          <ul
+            class="nav list-style-none w-100 border p-2 justify-content-between popular"
+          >
+            <li class="nav-links">
+              <a href="" class="nav-link active text-decoration-none">Top</a>
+            </li>
+            <li>
+              <a class="nav-link text-decoration-none" href="">Popular</a>
+            </li>
+            <li>
+              <a class="nav-link text-decoration-none" href="">Trending</a>
+            </li>
+            <li>
+              <a class="nav-link text-decoration-none" href="">Recent</a>
+            </li>
+          </ul>
+        </div>
+        <div class="container p-4 row m-auto">
+          <div class="col-sm-10 col-md-4 border">
+            <div class="container border">This is the cartd</div>
+          </div>
+          <div class="col-sm-10 col-md-4 border">
+            <div class="container border">This is the cartd</div>
+          </div>
+          <div class="col-sm-10 col-md-4 border">
+            <div class="container border">This is the cartd</div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script
@@ -123,6 +137,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="./index.js"></script>
+    <script src="./home.js"></script>
   </body>
 </html>
