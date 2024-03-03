@@ -45,3 +45,17 @@ const validation = () => {
     error[0].style.display = "none";
   }
 };
+
+const formd = document.getElementById("registerUser");
+
+formd.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const object = {};
+  const formData = new FormData(formd);
+  formData.forEach((value, key) => {
+    object[key] = value;
+  });
+
+  console.log(object);
+});
