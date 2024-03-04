@@ -48,22 +48,42 @@ const validation = () => {
 
 const formd = document.getElementById("registerUser");
 
+//sending data uisng axios
 formd.addEventListener("submit", async (e) => {
   e.preventDefault();
-  const url = "http://localhost:8000/api/v1/users/register";
-  const object = {};
-  const formData = new FormData(formd);
-  formData.forEach((value, key) => {
-    object[key] = value;
-  });
-  const options = {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(object),
-  };
+  try {
+    const url = "http://localhost:8000/api/v1/users/register";
+    const formData = new FormData(formd);
 
-  await fetch(url, options);
-  // const data = await result.json();
+    const { data } = await axios.post(url, formData, {
+      headers: {
+        "Content-type": "application/json",
+      },
+    });
+
+    console.log(data);
+  } catch (error) {
+    console.log(error.response.data.message);
+  }
 });
+
+//sending data using fetch
+// formd.addEventListener("submit", async (e) => {
+//   e.preventDefault();
+//   const url = "http://localhost:8000/api/v1/users/register";
+//   const object = {};
+//   const formData = new FormData(formd);
+//   formData.forEach((value, key) => {
+//     object[key] = value;
+//   });
+//   const options = {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//     body: JSON.stringify(object),
+//   };
+
+//   await fetch(url, options);
+//   // const data = await result.json();
+// });
