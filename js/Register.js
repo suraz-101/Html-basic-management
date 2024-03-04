@@ -63,7 +63,7 @@ formd.addEventListener("submit", async (e) => {
 
     console.log(data);
   } catch (error) {
-    console.log(error.response.data.message);
+    console.log({ Error: error.response.data.message });
   }
 });
 
