@@ -114,3 +114,13 @@ In above case, conditions are score>=80 && score <=100 which returns the boolean
     - Setting
 
 # Day - 53 : Home page design
+
+# Day - 55 : Data sending to server
+
+- understand about CORS
+
+  - while sending request to server we need to setup that from which domain the request must be accepted. So, for that we can use cors npm package and enable it in our server .
+
+  - learned about the fetch() method to fetch api to send request to the server
+
+  - learned about JSON.stringfy(object) => to convert to json string the data must be in json formate.

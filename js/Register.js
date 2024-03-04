@@ -48,14 +48,22 @@ const validation = () => {
 
 const formd = document.getElementById("registerUser");
 
-formd.addEventListener("submit", (e) => {
+formd.addEventListener("submit", async (e) => {
   e.preventDefault();
-
+  const url = "http://localhost:8000/api/v1/users/register";
   const object = {};
   const formData = new FormData(formd);
   formData.forEach((value, key) => {
     object[key] = value;
   });
+  const options = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(object),
+  };
 
-  console.log(object);
+  await fetch(url, options);
+  // const data = await result.json();
 });
