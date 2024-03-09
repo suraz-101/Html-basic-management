@@ -69,3 +69,9 @@ label {
 .loginButton {
   border: 1px solid #4e545c;
 }
+
+.cross {
+  border: 3px solid transparent;
+  border-radius: 50%;
+  /* box-shadow: 0px px 100px 2px rgb(0, 34, 85); */
+}
