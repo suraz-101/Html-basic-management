@@ -67,6 +67,7 @@ formd.addEventListener("submit", async (e) => {
   }
 });
 
+
 //sending data using fetch
 // formd.addEventListener("submit", async (e) => {
 //   e.preventDefault();
@@ -87,3 +88,5 @@ formd.addEventListener("submit", async (e) => {
 //   await fetch(url, options);
 //   // const data = await result.json();
 // });
+
+
